@@ -1,2 +1,2 @@
-# free-scribe
- React web based transcription & translation app that uses web workers to run ML models in the browser
+# VoxFox
+ React web based transcription app that uses web workers to run ML model(openai's whisper) in the browser
