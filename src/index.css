@@ -4,6 +4,7 @@
 
 * {
   font-family: 'Open Sans', sans-serif;
+  
 }
 
 h1,
@@ -17,39 +18,51 @@ h3,
   box-shadow: 3px 3px 0 0 #93c5fd;
 }
 
-.specialBtn {
+.speacialBtn{
   background: white;
-  box-shadow: 0px 14px 55px rgba(96, 165, 255, 0.35);
+  box-shadow: 0px 14px 55px rgba(255, 152, 96, 0.35);
   transition-duration: 200ms;
 }
 
-.specialBtn:hover {
+.speacialBtn:hover{
   opacity: 0.8;
 }
 
 .loading {
-  animation: width 5s linear infinite;
+  animation: bounceWidth 3s ease-in-out infinite;
   margin-right: auto;
+  background-color: #94a3b8; /* Lighter Slate */
+}
+
+.loading0 {
+  animation-delay: 0s;
 }
 
 .loading1 {
-  animation-delay: -4s;
+  animation-delay: -1.5s;
 }
 
 .loading2 {
-  animation-delay: -2s;
+  animation-delay: -3s;
 }
 
-@keyframes width {
-  0%{width: 100%;}
-  10%{width: 73%;}
-  20%{width: 35%;}
-  30%{width: 37%;}
-  40%{width: 48%;}
-  50%{width: 65%;}
-  60%{width: 46%;}
-  70%{width: 38%;}
-  80%{width: 66%;}
-  90%{width: 76%;}
-  100%{width: 100%;}
+@keyframes bounceWidth {
+  0%, 100% {
+    width: 30%;
+  }
+  15% {
+    width: 55%;
+  }
+  35% {
+    width: 75%;
+  }
+  50% {
+    width: 90%;
+  }
+  65% {
+    width: 75%;
+  }
+  85% {
+    width: 55%;
+  }
 }

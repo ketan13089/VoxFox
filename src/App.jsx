@@ -79,7 +79,7 @@ function App() {
   }
 
   return (
-    <div className='flex flex-col max-w-[1000px] mx-auto w-full'>
+    <div className='flex flex-col w-full bg-gradient-to-br from-[#8EC5FC] to-[#E0C3FC] min-h-screen'>
       <section className='min-h-screen flex flex-col'>
         <Header />
         {output ? (
